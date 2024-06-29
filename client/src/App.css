@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #e3e3e3;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #e3e3e3;
+  color: #007bff;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+}
+
+.section pre {
+  text-align: left;
+  white-space: pre-wrap;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+  color: #007bff;
+  font-size: larger;
+}
