@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meal-genie-client-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meal-genie-client
+  template:
+    metadata:
+      labels:
+        app: meal-genie-client
+    spec:
+      containers:
+        - name: meal-genie-client
+          image: shravyakudlu/meal-genie-client
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: meal-genie-client-srv
+spec:
+  selector:
+    app: meal-genie-client
+  ports:
+    - name: meal-genie-client
+      protocol: TCP
+      port: 5174
+      targetPort: 5174

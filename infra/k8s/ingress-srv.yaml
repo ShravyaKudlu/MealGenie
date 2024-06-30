@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-srv
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  rules:
+    - host: mealgenie.com
+      http:
+        paths:
+          - path: /ingredients
+            pathType: Prefix
+            backend:
+              service:
+                name: meal-genie-clusterip-srv
+                port:
+                  number: 4000
+          - path: /.*
+            pathType: Prefix
+            backend:
+              service:
+                name: meal-genie-client-srv
+                port:
+                  number: 5174

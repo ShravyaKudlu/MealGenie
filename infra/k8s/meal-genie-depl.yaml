@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meal-genie-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meal-genie
+  template:
+    metadata:
+      labels:
+        app: meal-genie
+    spec:
+      containers:
+        - name: meal-genie
+          image: shravyakudlu/meal-genie
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: meal-genie-clusterip-srv
+spec:
+  selector:
+    app: meal-genie
+  ports:
+    - name: meal-genie
+      protocol: TCP
+      port: 4000
+      targetPort: 4000
