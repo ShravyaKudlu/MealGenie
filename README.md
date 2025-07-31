@@ -29,6 +29,6 @@
 
 > 📽️ Watch MealGenie in action:
 
-[![MealGenie Demo](./Thumbnail_MealGenie.png)]([https://drive.google.com/file/d/1Ta6o3OSuNg0wd0pbSasb13wDTU6IQ1Jw/view?usp=sharing](https://drive.google.com/file/d/1FPg0TpI0dG1g2spMmDzsPie3JMzQTbBd/view?usp=sharing))
+[![MealGenie Demo](./Thumbnail_MealGenie.png)](https://drive.google.com/file/d/1FPg0TpI0dG1g2spMmDzsPie3JMzQTbBd/view?usp=sharing)
 
 > _Click the image above to watch the full demo on Google Drive._
